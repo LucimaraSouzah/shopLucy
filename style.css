@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta&family=Roboto+Mono:ital,wght@1,300&family=Roboto+Slab:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2C3A47;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: max-content;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header > h1 {
+  margin: 10px 40px;
+  font-size: 30px;
+  font-family: "Roboto Mono", monospace;
+  color: #CAD3C8;
+}
+
+.header > img {
+  margin-right: 70px;
+}
+
+hr {
+  width: 100%;
+  border: 1px solid #e3e2e2;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  border: solid 1px #e3e2e2;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgb(56, 56, 56);
+}
+
+.card-names {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.card img {
+  margin: auto;
+}
+
+.card-name {
+  font-size: 15px;
+  font-family: "Mukta", sans-serif;
+  color: #e3e2e2;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+
+.card-brand {
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #e3e2e2;
+  font-weight: 500;
+}
+
+.card-price {
+  font-size: 18px;
+  font-family: "Roboto Slab", serif;
+  color: #e3e2e2;
+}
+
+.button {
+  background-color: #2C3A47;
+  border-radius: 30px;
+  align-self: center;
+  width: max-content;
+  padding: 5px 10px;
+  margin: 0px 30%;
+  color: #e3e2e2;
+  font-weight: 500;
+  cursor: pointer;
+  border-color: #2C3A47;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: #e3e2e2;
+  color: #2C3A47;
+}
+
+.cart {
+  cursor: pointer;
+  position: relative;
+  margin-right: 70px;
+}
+
+.cart-in {
+  display: none;
+  width: 300px;
+  height: max-content;
+  position: absolute;
+  background-color: rgb(155, 154, 155);
+  right: 0%;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: "Roboto Slab", serif;
+}
+
+.cart:hover .cart-in {
+  display: block;
+}
+
+.cart-title {
+  font-size: 18px;
+  color: #2C3A47;
+}
+
+.cart-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-list {
+  list-style: none;
+  color: #2C3A47;
+}
+
+.cart-button {
+  outline: none;
+  border: none;
+  background-color: rgb(155, 154, 155);
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 10px;
+}
